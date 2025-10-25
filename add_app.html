@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إضافة تطبيق جديد</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>إضافة تطبيق جديد</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+                <li><a href="add_app.html">إضافة تطبيق</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="order-section">
+            <h2>نموذج إدخال تطبيق</h2>
+            <form id="add-app-form">
+                <label for="app-name">اسم التطبيق (بالإنجليزية بدون فراغات):</label>
+                <input type="text" id="app-name" required>
+
+                <label for="company-name">اسم الشركة (بالإنجليزية):</label>
+                <input type="text" id="company-name" required>
+
+                <label for="website-url">رابط الموقع:</label>
+                <input type="url" id="website-url" required>
+
+                <label for="is-free">هل التطبيق مجاني؟</label>
+                <select id="is-free" required>
+                    <option value="">اختر</option>
+                    <option value="Free">مجاني</option>
+                    <option value="Paid">غير مجاني</option>
+                </select>
+
+                <label for="usage-field">مجال الاستخدام:</label>
+                <select id="usage-field" required>
+                    <option value="">اختر المجال</option>
+                    <option value="E-Commerce">التجارة الإلكترونية</option>
+                    <option value="Education">التعليم</option>
+                    <option value="Robotics">الروبوتات</option>
+                    <option value="Healthcare">الصحة</option>
+                    <option value="Finance">المالية</option>
+                </select>
+
+                <label for="description">شرح مختصر:</label>
+                <input type="text" id="description" required>
+
+                <label for="logo">شعار التطبيق (صورة):</label>
+                <input type="file" id="logo" accept="image/*">
+
+                <label for="media">ملف صوتي أو فيديو:</label>
+                <input type="file" id="media" accept="audio/*,video/*">
+
+                <button type="submit">إرسال</button>
+                <button type="reset">إعادة</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
